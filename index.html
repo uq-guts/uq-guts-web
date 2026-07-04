@@ -35,9 +35,9 @@
       <!-- Desktop nav links -->
       <nav class="hidden md:flex items-center gap-8 text-sm text-gray-700">
         <a href="#home" class="hover:text-gray-900">Home</a>
-        <a href="#about" class="hover:text-gray-900">About</a>
-        <a href="#events" class="hover:text-gray-900">Events</a>
-        <a href="#join" class="hover:text-gray-900">Join</a>
+        <a href="about.html" class="hover:text-gray-900">About</a>
+        <a href="events.html" class="hover:text-gray-900">Events</a>
+        <a href="join.html" class="hover:text-gray-900">Join</a>
         <a href="#contact" class="hover:text-gray-900">Contact</a>
       </nav>
 
@@ -58,33 +58,33 @@
   <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white">
     <nav class="flex flex-col px-5 py-3 text-sm text-gray-700 divide-y divide-gray-100">
       <a href="#home" class="py-3">Home</a>
-      <a href="#about" class="py-3">About</a>
-      <a href="#events" class="py-3">Events</a>
-      <a href="#join" class="py-3">Join</a>
+      <a href="about.html" class="py-3">About</a>
+      <a href="events.html" class="py-3">Events</a>
+      <a href="join.html" class="py-3">Join</a>
       <a href="#contact" class="py-3">Contact</a>
-      <a href="#join" class="mt-3 mb-2 inline-flex justify-center bg-gray-900 text-white px-5 py-2.5 rounded-full">Membership</a>
+      <a href="join.html" class="mt-3 mb-2 inline-flex justify-center bg-gray-900 text-white px-5 py-2.5 rounded-full">Membership</a>
     </nav>
   </div>
 </header>
 
 <!-- HERO -->
 <section id="home" class="relative bg-gray-100 overflow-hidden">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16 sm:py-20 lg:py-24">
-    <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
-      <div class="text-center lg:text-left">
-        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl tracking-tight">UQGUTS</h1>
-        <p class="mt-5 text-gray-600 text-base sm:text-lg max-w-md mx-auto lg:mx-0">
-          Together in UQ, connected through Taiwan.
-        </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-          <a href="#events" class="bg-gray-300 text-gray-900 px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-400 transition text-center">View Events</a>
-          <a href="#join" class="bg-gray-900 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-800 transition text-center">Join Membership</a>
-        </div>
-      </div>
-      <div class="hidden lg:flex items-center justify-center mt-12 lg:mt-0">
-        <div class="w-full aspect-[4/3] bg-gray-300 rounded-lg flex items-center justify-center text-gray-500 text-sm">
-          (Image)
-        </div>
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <img src="images/welcome_party.jpg" alt="" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gray-100/50"></div>
+  </div>
+
+  <!-- Content (sits on top) -->
+  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16 sm:py-20 lg:py-24">
+    <div class="text-center lg:text-left">
+      <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl tracking-tight">UQGUTS</h1>
+      <p class="mt-5 text-white text-base sm:text-lg max-w-md mx-auto lg:mx-0">
+        Together in UQ, connected through Taiwan.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+        <a href="#events" class="bg-gray-300 text-gray-900 px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-400 transition text-center">View Events</a>
+        <a href="#join" class="bg-gray-900 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-800 transition text-center">Join Membership</a>
       </div>
     </div>
   </div>
@@ -100,7 +100,7 @@
           The Graduate Union of Taiwanese Students at UQ is a student-led association dedicated to supporting Taiwanese graduate students and promoting Taiwanese culture within the UQ community. 
           Through networking events, cultural celebrations, academic sharing sessions, and social gatherings, we provide opportunities for students to build meaningful connections, exchange experiences, and engage with the wider university community.
         </p>
-        <a href="#join" class="mt-6 inline-block bg-gray-300 text-gray-900 px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-400 transition">Learn More</a>
+        <a href="about.html" class="mt-6 inline-block bg-gray-300 text-gray-900 px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-400 transition">Learn More</a>
       </div>
 
       <div class="mt-10 lg:mt-0 grid grid-cols-2 gap-x-8 gap-y-8 text-center lg:text-left max-w-md mx-auto lg:mx-0">
@@ -226,7 +226,7 @@
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1"/><path d="M8 11v6M12 11v6M12 13.5c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5V17"/></svg>
           </a>
           <a href="https://www.threads.com/@guts.uq" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition">
-            <svg width="16" height="16" viewBox="0 0 192 192" fill="currentColor"><path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.6942 44.745C97.5762 44.7443 97.4591 44.7443 97.3421 44.7443C82.4194 44.7443 70.0245 51.1409 62.4501 62.7807L75.6046 71.6802C81.2531 62.968 90.181 61.1616 97.3527 61.1616C97.4372 61.1616 97.5205 61.1616 97.6032 61.1622C106.507 61.216 113.226 63.7776 117.581 68.775C120.767 72.4331 122.892 77.4991 123.939 83.9159C115.995 82.5723 107.395 82.1610 98.204 82.6801C72.3132 84.1409 55.6414 99.478 56.7663 120.859C57.337 131.68 62.7737 140.982 71.9762 147.02C79.7194 152.096 89.7182 154.576 100.106 153.999C113.843 153.238 124.6 147.972 132.084 138.347C137.759 131.049 141.354 121.622 142.951 109.611C149.529 113.598 154.394 118.847 157.075 125.183C161.617 135.916 161.886 153.639 147.482 168.032C134.859 180.645 119.688 186.151 97.0135 186.318C71.8351 186.132 52.7418 178.061 40.2743 162.323C28.6018 147.585 22.5714 126.279 22.3459 98.9982C22.5714 71.7182 28.6018 50.4122 40.2743 35.6738C52.7418 19.9366 71.8351 11.8657 97.0135 11.6801C122.372 11.8674 141.799 19.976 154.756 35.7823C161.106 43.5289 165.906 53.2455 169.028 64.5613L185 60.0369C181.187 46.135 175.213 34.1223 167.128 24.2683C150.638 4.2004 126.577 -6.20395 97.0623 -6.4143H97.0135H96.9647C67.4499 -6.2043 43.3891 4.198 26.8988 24.2634C12.256 42.0644 4.7051 66.6002 4.436 98.5798L4.4342 98.9982L4.436 99.4166C4.7051 131.396 12.256 155.932 26.8988 173.733C43.3891 193.798 67.4499 204.202 96.9647 204.412H97.0135H97.0623C124.913 204.216 144.591 196.982 160.906 180.699C182.246 159.361 181.617 132.6 174.639 116.522C169.617 104.976 160.036 95.6167 145.836 88.9883H141.537ZM99.1349 137.6C87.9351 138.207 76.3011 133.147 75.7215 122.549C75.2913 114.71 81.3011 105.997 99.1651 104.977C101.204 104.86 103.204 104.804 105.163 104.804C111.766 104.804 117.943 105.463 123.548 106.723C121.463 132.302 109.418 137.036 99.1349 137.6Z"/></svg>
+            <svg width="16" height="16" viewBox="-10 -10 212 224" fill="currentColor"><path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.6942 44.745C97.5762 44.7443 97.4591 44.7443 97.3421 44.7443C82.4194 44.7443 70.0245 51.1409 62.4501 62.7807L75.6046 71.6802C81.2531 62.968 90.181 61.1616 97.3527 61.1616C97.4372 61.1616 97.5205 61.1616 97.6032 61.1622C106.507 61.216 113.226 63.7776 117.581 68.775C120.767 72.4331 122.892 77.4991 123.939 83.9159C115.995 82.5723 107.395 82.1610 98.204 82.6801C72.3132 84.1409 55.6414 99.478 56.7663 120.859C57.337 131.68 62.7737 140.982 71.9762 147.02C79.7194 152.096 89.7182 154.576 100.106 153.999C113.843 153.238 124.6 147.972 132.084 138.347C137.759 131.049 141.354 121.622 142.951 109.611C149.529 113.598 154.394 118.847 157.075 125.183C161.617 135.916 161.886 153.639 147.482 168.032C134.859 180.645 119.688 186.151 97.0135 186.318C71.8351 186.132 52.7418 178.061 40.2743 162.323C28.6018 147.585 22.5714 126.279 22.3459 98.9982C22.5714 71.7182 28.6018 50.4122 40.2743 35.6738C52.7418 19.9366 71.8351 11.8657 97.0135 11.6801C122.372 11.8674 141.799 19.976 154.756 35.7823C161.106 43.5289 165.906 53.2455 169.028 64.5613L185 60.0369C181.187 46.135 175.213 34.1223 167.128 24.2683C150.638 4.2004 126.577 -6.20395 97.0623 -6.4143H97.0135H96.9647C67.4499 -6.2043 43.3891 4.198 26.8988 24.2634C12.256 42.0644 4.7051 66.6002 4.436 98.5798L4.4342 98.9982L4.436 99.4166C4.7051 131.396 12.256 155.932 26.8988 173.733C43.3891 193.798 67.4499 204.202 96.9647 204.412H97.0135H97.0623C124.913 204.216 144.591 196.982 160.906 180.699C182.246 159.361 181.617 132.6 174.639 116.522C169.617 104.976 160.036 95.6167 145.836 88.9883H141.537ZM99.1349 137.6C87.9351 138.207 76.3011 133.147 75.7215 122.549C75.2913 114.71 81.3011 105.997 99.1651 104.977C101.204 104.86 103.204 104.804 105.163 104.804C111.766 104.804 117.943 105.463 123.548 106.723C121.463 132.302 109.418 137.036 99.1349 137.6Z"/></svg>
           </a>
         </div>
       </div>
@@ -235,7 +235,7 @@
       <div>
         <h4 class="font-medium text-sm">About</h4>
         <ul class="mt-4 space-y-3 text-sm text-gray-500">
-          <li><a href="#about" class="hover:text-gray-800">About Us</a></li>
+          <li><a href="about.html" class="hover:text-gray-800">About Us</a></li>
           <li><a href="#" class="hover:text-gray-800">Our Team</a></li>
           <li><a href="#" class="hover:text-gray-800">Sponsorships</a></li>
           <li><a href="#" class="hover:text-gray-800">FAQ</a></li>
@@ -247,7 +247,7 @@
         <h4 class="font-medium text-sm">Events</h4>
         <ul class="mt-4 space-y-3 text-sm text-gray-500">
           <li><a href="#" class="hover:text-gray-800">Timeline</a></li>
-          <li><a href="#events" class="hover:text-gray-800">Upcoming Events</a></li>
+          <li><a href="events.html" class="hover:text-gray-800">Upcoming Events</a></li>
           <li><a href="#" class="hover:text-gray-800">Gallery</a></li>
         </ul>
       </div>
@@ -256,7 +256,7 @@
       <div>
         <h4 class="font-medium text-sm">Join</h4>
         <ul class="mt-4 space-y-3 text-sm text-gray-500">
-          <li><a href="#join" class="hover:text-gray-800">Membership</a></li>
+          <li><a href="join.html" class="hover:text-gray-800">Membership</a></li>
           <li><a href="#" class="hover:text-gray-800">Committee</a></li>
         </ul>
       </div>
