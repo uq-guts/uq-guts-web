@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BY9QJLPG5Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BY9QJLPG5Z');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UQ Guts | Student Committee</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          lavender: {
+            50: '#F5F3FC',
+            100: '#EDE9F9',
+            200: '#DCD3F3',
+            300: '#C3B2EA',
+            400: '#A88EDE',
+            500: '#8F6FD1',
+            600: '#7857BD',
+            700: '#63479C',
+          }
+        },
+        fontFamily: {
+          serif: ['Georgia', 'Cambria', "Times New Roman", 'Times', 'serif'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+</style>
+</head>
+<body class="bg-white text-gray-900">
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="../../index.html" class="flex items-center gap-2 shrink-0">
+        <img src="../../images/guts_logo.png" alt="UQ Guts Logo" class="h-8 w-auto">
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-700">
+        <a href="../../index.html" class="hover:text-gray-900">Home</a>
+
+        <!-- About dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-gray-900 py-6">
+            About
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="transition-transform group-hover:rotate-180"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="../../about.html" class="block px-4 py-2 text-sm hover:bg-gray-50">About Us</a>
+            <a href="../../team.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Our Team</a>
+            <a href="../../sponsorship.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Sponsorships</a>
+            <a href="../../faq.html" class="block px-4 py-2 text-sm hover:bg-gray-50">FAQ</a>
+          </div>
+        </div>
+
+        <!-- Events dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-gray-900 py-6">
+            Events
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="transition-transform group-hover:rotate-180"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <!--<a href="#" class="block px-4 py-2 text-sm hover:bg-gray-50">Timeline</a>-->
+            <a href="../../events.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Upcoming Events</a>
+            <a href="../../gallery.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Gallery</a>
+          </div>
+        </div>
+
+        <!-- Join dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-gray-900 py-6">
+            Join
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="transition-transform group-hover:rotate-180"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="absolute top-full left-0 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <!--a href="https://campus.hellorubric.com/?tab=memberships&s=3314" class="block px-4 py-2 text-sm hover:bg-gray-50">Membership</a-->
+             <a href="https://campus.hellorubric.com/?tab=memberships&s=3314" class="block px-4 py-2 text-sm hover:bg-gray-50">Membership</a>
+            <a href="../../committee.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Committee</a>
+          </div>
+        </div>
+
+        <a href="#contact" class="hover:text-gray-900">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <a href="https://campus.hellorubric.com/?tab=memberships&s=3314" class="hidden md:inline-flex items-center bg-lavender-300 text-white text-sm px-5 py-2.5 rounded-full hover:bg-lavender-500 transition">
+        Membership
+      </a>
+
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="md:hidden p-2 -mr-2 rounded-full border bg-lavender-300 text-white" aria-label="Open menu">
+        <svg id="icon-open" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="hidden"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white">
+    <nav class="flex flex-col px-5 py-3 text-sm text-gray-700 divide-y divide-gray-100">
+      <a href="../../index.html" class="py-3">Home</a>
+      <a href="../../about.html" class="py-3">About Us</a>
+      <a href="../../team.html" class="py-3">Our Team</a>
+      <a href="../../events.html" class="py-3">Upcoming Events</a>
+      <a href="../../sponsorship.html" class="py-3">Discounts/Sponsorships</a>
+      <a href="../../gallery.html" class="py-3">Gallery</a>
+      <a href="../../faq.html" class="py-3">FAQs</a>
+      <a href="https://campus.hellorubric.com/?tab=memberships&s=3314" class="mt-3 mb-2 inline-flex justify-center bg-lavender-300 text-white px-5 py-2.5 rounded-full">Membership</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- PAGE HEADER -->
+<div class="bg-lavender-300 py-16 sm:py-20">
+  <h1 class="font-serif text-4xl text-white sm:text-5xl text-center">Gallery</h1>
+  <h1 class="font-serif text-3xl text-white sm:text-2xl text-center mt-3">2026 S1 WBC</h1>
+</div>
+
+<!-- GALLERY SUBPAGE CONTENT -->
+<section class="bg-white">
+  <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-10 py-16 sm:py-20">
+
+    <h2 class="font-serif text-xl mb-6">Highlights</h2>
+
+    <div class="grid grid-cols-1 gap-6 mb-10">
+      <img src="../../images/gallery/2026-S1/26-1-WBC/1.jpg" alt="WBC" class="w-full object-cover">
+      <img src="../../images/gallery/2026-S1/26-1-WBC/2.jpg" alt="WBC" class="w-full object-cover">
+      <img src="../../images/gallery/2026-S1/26-1-WBC/3.jpg" alt="WBC" class="w-full object-cover">
+      <img src="../../images/gallery/2026-S1/26-1-WBC/4.jpg" alt="WBC" class="w-full object-cover">
+      <img src="../../images/gallery/2026-S1/26-1-WBC/5.jpg" alt="WBC" class="w-full object-cover">
+      <img src="../../images/gallery/2026-S1/26-1-WBC/6.jpg" alt="WBC" class="w-full object-cover">
+
+
+    </div>
+
+    <!--skip the download function first-->
+    <!--<div class="text-center">
+      <a href="#" download class="font-serif inline-flex items-center gap-2 bg-lavender-500 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-lavender-600 transition">
+        Download Event Photos
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+      </a>
+    </div>-->
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact" class="bg-white border-t border-gray-200">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-14">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- Contact -->
+      <div>
+        <h3 class="font-serif text-lg">Contact</h3>
+        <p class="mt-3 text-sm text-gray-500">Get in touch or drop us a line: guts.uq@gmail.com</p>
+        <div class="mt-5 flex gap-3">
+          <a href="https://www.instagram.com/guts.uq/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-9 h-9 rounded-full bg-lavender-300 text-white flex items-center justify-center hover:bg-lavender-400 transition">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://www.facebook.com/UQGUTS/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-full bg-lavender-300 text-white flex items-center justify-center hover:bg-lavender-400 transition">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1z"/></svg>
+          </a>
+          <a href="https://au.linkedin.com/company/uq-guts" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-lavender-300 text-white flex items-center justify-center hover:bg-lavender-400 transition">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1"/><path d="M8 11v6M12 11v6M12 13.5c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5V17"/></svg>
+          </a>
+          <a href="https://www.threads.com/@guts.uq" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="w-9 h-9 rounded-full bg-lavender-300 text-white flex items-center justify-center hover:bg-lavender-400 transition">
+            <svg width="16" height="16" viewBox="-10 -10 212 224" fill="currentColor"><path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.6942 44.745C97.5762 44.7443 97.4591 44.7443 97.3421 44.7443C82.4194 44.7443 70.0245 51.1409 62.4501 62.7807L75.6046 71.6802C81.2531 62.968 90.181 61.1616 97.3527 61.1616C97.4372 61.1616 97.5205 61.1616 97.6032 61.1622C106.507 61.216 113.226 63.7776 117.581 68.775C120.767 72.4331 122.892 77.4991 123.939 83.9159C115.995 82.5723 107.395 82.1610 98.204 82.6801C72.3132 84.1409 55.6414 99.478 56.7663 120.859C57.337 131.68 62.7737 140.982 71.9762 147.02C79.7194 152.096 89.7182 154.576 100.106 153.999C113.843 153.238 124.6 147.972 132.084 138.347C137.759 131.049 141.354 121.622 142.951 109.611C149.529 113.598 154.394 118.847 157.075 125.183C161.617 135.916 161.886 153.639 147.482 168.032C134.859 180.645 119.688 186.151 97.0135 186.318C71.8351 186.132 52.7418 178.061 40.2743 162.323C28.6018 147.585 22.5714 126.279 22.3459 98.9982C22.5714 71.7182 28.6018 50.4122 40.2743 35.6738C52.7418 19.9366 71.8351 11.8657 97.0135 11.6801C122.372 11.8674 141.799 19.976 154.756 35.7823C161.106 43.5289 165.906 53.2455 169.028 64.5613L185 60.0369C181.187 46.135 175.213 34.1223 167.128 24.2683C150.638 4.2004 126.577 -6.20395 97.0623 -6.4143H97.0135H96.9647C67.4499 -6.2043 43.3891 4.198 26.8988 24.2634C12.256 42.0644 4.7051 66.6002 4.436 98.5798L4.4342 98.9982L4.436 99.4166C4.7051 131.396 12.256 155.932 26.8988 173.733C43.3891 193.798 67.4499 204.202 96.9647 204.412H97.0135H97.0623C124.913 204.216 144.591 196.982 160.906 180.699C182.246 159.361 181.617 132.6 174.639 116.522C169.617 104.976 160.036 95.6167 145.836 88.9883H141.537ZM99.1349 137.6C87.9351 138.207 76.3011 133.147 75.7215 122.549C75.2913 114.71 81.3011 105.997 99.1651 104.977C101.204 104.86 103.204 104.804 105.163 104.804C111.766 104.804 117.943 105.463 123.548 106.723C121.463 132.302 109.418 137.036 99.1349 137.6Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div>
+        <h4 class="font-medium text-sm">About</h4>
+        <ul class="mt-4 space-y-3 text-sm text-gray-500">
+          <li><a href="../../about.html" class="hover:text-gray-800">About Us</a></li>
+          <li><a href="../../team.html" class="hover:text-gray-800">Our Team</a></li>
+          <li><a href="../../sponsorship.html" class="hover:text-gray-800">Sponsorships</a></li>
+          <li><a href="../../faq.html" class="hover:text-gray-800">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Events -->
+      <div>
+        <h4 class="font-medium text-sm">Events</h4>
+        <ul class="mt-4 space-y-3 text-sm text-gray-500">
+          <!--<li><a href="#" class="hover:text-gray-800">Timeline</a></li>-->
+          <li><a href="../../events.html" class="hover:text-gray-800">Upcoming Events</a></li>
+          <li><a href="../../gallery.html" class="hover:text-gray-800">Gallery</a></li>
+        </ul>
+      </div>
+
+      <!-- Join -->
+      <div>
+        <h4 class="font-medium text-sm">Join</h4>
+        <ul class="mt-4 space-y-3 text-sm text-gray-500">
+          <li><a href="https://campus.hellorubric.com/?tab=memberships&s=3314" class="hover:text-gray-800">Membership</a></li>
+          <li><a href="../../committee.html" class="hover:text-gray-800">Committee</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-gray-100 text-center text-xs text-gray-400">
+      &copy; 2026 UQ Guts. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });
+
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+</script>
+
+</body>
+</html>
